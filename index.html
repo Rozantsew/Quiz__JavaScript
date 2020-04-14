@@ -12,30 +12,157 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
 
 
-<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="src/css/main.css">
 </head>
 
 <!-- Top Section -->
 <div class="intro py-3 bg-white text-center">
     <div class="container">
-        <h2 class="text-primary display-3 my-4">
+        <h1 class="text-primary display-3 my-4">
             JavaScript Quiz
-        </h2>
+        </h1>
     </div>
 </div>
 
 <!-- Quiz section-->
 <div class="quiz py4 bg-primary">
     <div class="container">
-        <h2 class="my-5 text-white">
-            Ask your question
+        <h2 class="text-white">
+            Answer your JavaScript questions
         </h2>
+
+            <!-- first question -->
+        <form class="mt-5 quiz-form text-light">
+            <div class="question__feld my-5">
+                <p class="lead font-weight-normal">
+                    <span class="green">
+                        This exaple of code is?
+                        <br> <br>
+                    </span>
+                    const person = { <br>
+                        name: John, <br>
+                        secondName: Doe, <br>
+                        age: 23 <br>
+                    }
+                </p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q1" value="A" checked>
+                    <label class="form-check-label">
+                        It is an Object.
+                    </label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q1" value="B" checked>
+                    <label class="form-check-label">
+                        It is an Array.
+                    </label>
+                </div>
+            </div>
+            <!-- second question -->
+            <div class="question__feld my-5">
+                <p class="lead font-weight-normal">
+                    <span class="green">
+                        This exaple of code is?
+                        <br> <br>
+                    </span>
+                    const personData = [ <br>
+                        name: John, <br>
+                        secondName: Doe, <br>
+                        age: 23 <br>
+                    ]
+                </p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q2" value="A" checked>
+                    <label class="form-check-label">
+                        It is an Object.
+                    </label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q2" value="B" checked>
+                    <label class="form-check-label">
+                        It is an Array.
+                    </label>
+                </div>
+            </div>
+
+            <!-- Third question -->
+            <div class="question__feld my-5">
+                <p class="lead font-weight-normal">
+                    <span class="green">
+                        Which one of next written function have the ability be called or executed, <br>before declaration ( from every line of code ) <br> <br>
+                    </span>
+                    <span class="grey">
+                        // function expression <br> <br>
+                    </span>
+                    const speak = function( ) {<br>
+                        console.log('Have a good day');<br>
+                    };<br> <br>
+                    <span class="grey">
+                        // function declaration <br> <br>
+                    </span>
+                    function speak( ) {<br>
+                        console.log('Have a good day');<br>
+                    };<br>
+                </p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q3" value="A" checked>
+                    <label class="form-check-label">
+                        First exaple.
+                    </label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q3" value="B" checked>
+                    <label class="form-check-label">
+                        Second exaple.
+                    </label>
+                </div>
+            </div>
+
+            <!-- Four question -->
+            <div class="question__feld my-5">
+                <p class="lead font-weight-normal">
+                    <span class="green">
+                        Which one of next written function is,
+                        arrow function
+                        <br> <br>
+                    </span>
+                    const calcArea = function( radius ) {<br>
+                        return 3.14 * radius**2;<br>
+                        const area = calcArea(5); <br>
+                        console.log('Calculeted area is: ', area); <br>
+                    };<br> <br>
+                    
+                    
+                    const calcArea = ( radius ) => {<br>
+                        return 3.14 * radius**2;<br>
+                        const area = calcArea(5); <br>
+                        console.log('Calculeted area is: ', area); <br>
+                    };<br> <br>
+                </p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q4" value="A" checked>
+                    <label class="form-check-label">
+                        First exaple.
+                    </label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q4" value="B" checked>
+                    <label class="form-check-label">
+                        Second exaple.
+                    </label>
+                </div>
+            </div>
+
+            <div class="submit__btn clas-center">
+                <input type="submit" class="btn btnlight">
+            </div>
+        </form>
     </div>
 </div>
 
 
 <body">
-<script type="text/javascript" src="./js/main.js"></script>
+<script type="text/javascript" src="./src/js/main.js"></script>
 
 <!-- chancejs library -->
 <script src="https://chancejs.com/chance.min.js"></script>
