@@ -1,0 +1,14 @@
+.error {
+  padding: 10px;
+  color: crimson;
+  border: 1px dotted crimson;
+  margin: 10px;
+}
+
+.success {
+  padding: 10px;
+  color: limegreen;
+  border: 1px dotted limegreen;
+  margin: 10px;
+}
+/*# sourceMappingURL=main.css.map */
